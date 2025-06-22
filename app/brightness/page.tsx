@@ -16,7 +16,7 @@ export const metadata = {
 export default function BrightnessPage() {
   return (
     <main className="min-h-screen">
-      <Header />
+      <Header forceBlackText={true} />
       <BrightnessHero />
       <ThreeStepTreatment />
       <EquipmentSection />

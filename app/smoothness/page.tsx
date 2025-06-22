@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function SmoothnessPage() {
   return (
     <main className="min-h-screen">
-      <Header />
+      <Header forceBlackText={true} />
       <SmoothnessHero />
       <SmoothnessProgram />
       <SmoothnessInfo />

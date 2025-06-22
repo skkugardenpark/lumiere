@@ -5,7 +5,11 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
-const Header = () => {
+interface HeaderProps {
+  forceBlackText?: boolean
+}
+
+const Header = ({ forceBlackText = false }: HeaderProps) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -74,7 +78,7 @@ const Header = () => {
                 key={item.name}
                 onClick={() => handleNavClick(item.href, item.isPage)}
                 className={`text-sm font-medium transition-colors duration-200 relative group ${
-                  isScrolled 
+                  forceBlackText || isScrolled 
                     ? 'text-lumi-charcoal hover:text-lumi-olive' 
                     : 'text-white hover:text-lumi-olive'
                 }`}
@@ -99,7 +103,7 @@ const Header = () => {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={`lg:hidden p-2 transition-colors ${
-              isScrolled 
+              forceBlackText || isScrolled 
                 ? 'text-lumi-charcoal hover:text-lumi-olive' 
                 : 'text-white hover:text-lumi-olive'
             }`}

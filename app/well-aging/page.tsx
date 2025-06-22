@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function WellAgingPage() {
   return (
     <main className="min-h-screen">
-      <Header />
+      <Header forceBlackText={true} />
       <WellAgingHero />
       <WellAgingInfo />
       <EquipmentShowcase />

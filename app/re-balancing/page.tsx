@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function ReBalancingPage() {
   return (
     <main className="min-h-screen">
-      <Header />
+      <Header forceBlackText={true} />
       <ReBalancingHero />
       <IVTherapy />
       <ImmuneTherapy />
