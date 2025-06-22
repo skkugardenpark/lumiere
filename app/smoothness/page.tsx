@@ -20,7 +20,7 @@ export default function SmoothnessPage() {
       <Header 
         forceBlackText={true} 
         forceLogo="/lumiere.png"
-        logoSize={{ width: 320, height: 85 }}
+        logoSize={{ width: 280, height: 75 }}
       />
       <SmoothnessHero />
       <SmoothnessProgram />
