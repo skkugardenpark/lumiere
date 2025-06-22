@@ -7,9 +7,15 @@ import { Menu, X } from 'lucide-react'
 
 interface HeaderProps {
   forceBlackText?: boolean
+  forceLogo?: string
+  logoSize?: { width: number; height: number }
 }
 
-const Header = ({ forceBlackText = false }: HeaderProps) => {
+const Header = ({ 
+  forceBlackText = false, 
+  forceLogo,
+  logoSize 
+}: HeaderProps) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -62,12 +68,12 @@ const Header = ({ forceBlackText = false }: HeaderProps) => {
             className="flex items-center space-x-3 cursor-pointer"
           >
             <Image
-              src={isScrolled ? "/lumiere.png" : "/logo2.png"}
+              src={forceLogo || (isScrolled ? "/lumiere.png" : "/logo2.png")}
               alt="루미에르 더마 로고"
-              width={260}
-              height={70}
+              width={logoSize?.width || 260}
+              height={logoSize?.height || 70}
               priority
-              className="h-16 w-auto transition-all duration-300"
+              className={`${logoSize ? 'h-auto' : 'h-16'} w-auto transition-all duration-300`}
             />
           </motion.div>
 

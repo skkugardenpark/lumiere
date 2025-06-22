@@ -16,7 +16,11 @@ export const metadata = {
 export default function BrightnessPage() {
   return (
     <main className="min-h-screen">
-      <Header forceBlackText={true} />
+      <Header 
+        forceBlackText={true} 
+        forceLogo="/lumiere.png"
+        logoSize={{ width: 320, height: 85 }}
+      />
       <BrightnessHero />
       <ThreeStepTreatment />
       <EquipmentSection />

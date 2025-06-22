@@ -17,7 +17,11 @@ export const metadata: Metadata = {
 export default function SmoothnessPage() {
   return (
     <main className="min-h-screen">
-      <Header forceBlackText={true} />
+      <Header 
+        forceBlackText={true} 
+        forceLogo="/lumiere.png"
+        logoSize={{ width: 320, height: 85 }}
+      />
       <SmoothnessHero />
       <SmoothnessProgram />
       <SmoothnessInfo />
