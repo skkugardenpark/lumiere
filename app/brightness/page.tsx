@@ -19,7 +19,7 @@ export default function BrightnessPage() {
       <Header 
         forceBlackText={true} 
         forceLogo="/lumiere.png"
-        logoSize={{ width: 280, height: 75 }}
+        logoSize={{ width: 140, height: 40 }}
       />
       <BrightnessHero />
       <ThreeStepTreatment />

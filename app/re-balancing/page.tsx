@@ -18,7 +18,7 @@ export default function ReBalancingPage() {
       <Header 
         forceBlackText={true} 
         forceLogo="/lumiere.png"
-        logoSize={{ width: 280, height: 75 }}
+        logoSize={{ width: 140, height: 40 }}
       />
       <ReBalancingHero />
       <IVTherapy />
