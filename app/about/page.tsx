@@ -16,7 +16,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main className="min-h-screen">
-      <Header logoSize={{ width: 260, height: 70 }} />
+      <Header logoSize={{ width: 130, height: 35 }} />
       <AboutHero />
       <Certification />
       <DoctorProfile />
