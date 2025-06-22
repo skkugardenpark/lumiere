@@ -11,7 +11,7 @@ import Footer from '@/components/Footer'
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Header />
+      <Header logoSize={{ width: 520, height: 140 }} />
       <Hero />
       <Services />
       <About />
